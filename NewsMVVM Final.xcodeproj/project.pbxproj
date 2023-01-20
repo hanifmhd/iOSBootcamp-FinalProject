@@ -156,17 +156,17 @@
 		355E8947297A79920092230C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				355E8948297A799D0092230C /* Cells */,
+				355E8948297A799D0092230C /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		355E8948297A799D0092230C /* Cells */ = {
+		355E8948297A799D0092230C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				355E8949297A79B20092230C /* NewsTableViewCell.swift */,
 			);
-			path = Cells;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		3ACE9C8BE9D4400BF41C41FC /* Pods */ = {
@@ -467,6 +467,7 @@
 				DEVELOPMENT_TEAM = H7KD5463WD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "NewsMVVM Final/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Lambe News";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -497,6 +498,7 @@
 				DEVELOPMENT_TEAM = H7KD5463WD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "NewsMVVM Final/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Lambe News";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

@@ -97,7 +97,7 @@ extension NewsViewController {
     @objc func favorite(sender: UIButton){
         let cellData = self.listNewsViewModel?.newsAt(sender.tag)
         guard let news = cellData?.articles else { return }
-        let realm = try! Realm()
+        lazy var realm = try! Realm()
         try! realm.write {
             realm.add(news, update: .modified)
         }

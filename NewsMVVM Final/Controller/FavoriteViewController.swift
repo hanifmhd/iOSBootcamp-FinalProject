@@ -33,7 +33,7 @@ class FavoriteViewController: UITableViewController {
     }
     
     private func populateNews() {
-        let realm = try! Realm()
+        lazy var realm = try! Realm()
         let news = realm.objects(News.self)
         self.listNewsViewModel = ListNewsViewModel(Array(news))
         self.tableView.reloadData()
@@ -92,7 +92,7 @@ extension FavoriteViewController {
         let cellData = self.listNewsViewModel?.newsAt(sender.tag)
         guard let news = cellData?.articles else { return }
         _ = news.title
-        let realm = try! Realm()
+        lazy var realm = try! Realm()
         try! realm.write {
             realm.delete(news)
         }

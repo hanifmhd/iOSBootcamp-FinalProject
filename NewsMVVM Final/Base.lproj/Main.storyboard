@@ -32,7 +32,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeh-88-a6c" userLabel="Description Label">
-                                            <rect key="frame" x="20" y="25.000000000000004" width="65" height="14.666666666666668"/>
+                                            <rect key="frame" x="20" y="25" width="65" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -53,6 +53,11 @@
                                         <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="cVH-bL-Fv0" secondAttribute="trailing" id="uIc-0a-m6V"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="yeh-88-a6c" id="rKj-PE-jhB"/>
+                                    <outlet property="favoriteButton" destination="cVH-bL-Fv0" id="ww9-i5-bEH"/>
+                                    <outlet property="titleLabel" destination="Yzy-xv-NCi" id="eC0-Lw-Ldv"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
@@ -115,6 +120,11 @@
                                         <constraint firstItem="geV-ba-lGk" firstAttribute="centerY" secondItem="0h1-5L-qcX" secondAttribute="centerY" id="zxO-cr-a37"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="ziG-Z0-m8D" id="fKa-af-prg"/>
+                                    <outlet property="favoriteButton" destination="geV-ba-lGk" id="nYe-0k-tPE"/>
+                                    <outlet property="titleLabel" destination="HFX-ys-fC8" id="7dH-zh-VNG"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>

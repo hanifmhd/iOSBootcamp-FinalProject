@@ -32,7 +32,7 @@ class ProfileViewController: UIViewController {
             buttonView.setTitle("Save", for: .normal)
             fullnameView.becomeFirstResponder()
         } else {
-            let realm = try! Realm()
+            lazy var realm = try! Realm()
             try! realm.write {
                 profile.fullname = fullnameView.text ?? ""
                 profile.title = titleView.text ?? ""
@@ -53,7 +53,7 @@ class ProfileViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let realm = try! Realm()
+        lazy var realm = try! Realm()
         let profiles = realm.objects(Profile.self)
         if profiles.count == 0 {
             profile = Profile()
